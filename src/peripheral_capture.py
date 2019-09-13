@@ -8,7 +8,7 @@ from pynput.mouse import Controller as MouseController
 from pynput.keyboard import Listener as KeyboardListener
 from pynput.keyboard import Controller as KeyboardController
 from pynput.keyboard import Key
-from format2pyautogui import mouse2pyautogui, keyboard2pyautogui
+from format2pyautogui import mouse2pyautogui, keyboard2pyautogui, print_new_image, write_output_file
 # import keyboard
 import pyautogui, os, threading
 import tkinter as tk
@@ -211,12 +211,6 @@ def start_program(self, button_map: list) -> list:
         elif recording and key not in functional_keys:
             recorded_data.append(keyboard2pyautogui(key_pressed=key))
             print(keyboard2pyautogui(key_pressed=key))
-
-    def print_new_image(save_image_path, save_image_name):
-        image_code = f'{save_image_name} = r\'{save_image_path}\'\n'
-        f'select({save_image_name})\n'
-        f'sleep(1.5)\n\n'
-        return image_code
 
     # Key released event
     def on_release(key):
