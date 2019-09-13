@@ -9,7 +9,7 @@ Things to consider:
 
 
 Pax notes 9/12/2019
--when you want to expand a window to fullscreen, the top right expand button is not a great option because:
+- when you want to expand a window to fullscreen, the top right expand button is not a great option because:
 1. difficult to capture as an image due to top/left to bottom/right method of imagecapturing and 
 2. it's often not a unique image because that button is the same for most windows
 Therefore, it may be best to select an image of the top left and use double click
