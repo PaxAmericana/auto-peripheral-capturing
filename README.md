@@ -1,3 +1,5 @@
 # auto-peripheral-capturing
-jummy egg 
-pax americana
+made by:
+pax americana (paxton Wills)
+jummy egg (Trung Hoang)
+
