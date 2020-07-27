@@ -1,6 +1,5 @@
 # This file contains GUI automation code
 # run using a python 3 interpreter
-# default header file
 
 import pyautogui
 from time import sleep
@@ -28,6 +27,16 @@ def find(image):
             print('Searching for : ' + image)
 
 
+def start_mod_file_builder():
+    # open a new tab with MoD
+    pyautogui.hotkey('winleft', 'r', duration=.25)
+    sleep(.25)
+    mod_filebuilder_path = r'C:\Program Files (x86)\PTI\PSSMODFileBuilder\MODFileBuilder.exe'
+    pyautogui.typewrite(mod_filebuilder_path)
+    pyautogui.typewrite(['enter'])
+
+# function Call of Main goes here(project...)
+
 # moving the mouse to the upper left corner will end the program
 pyautogui.FAILSAFE = True
 
@@ -36,5 +45,7 @@ pyautogui.PAUSE = .2
 
 # duration of each click
 set_duration = .25
+start_mod_file_builder()
+sleep(5)
 
 #### end of header ###

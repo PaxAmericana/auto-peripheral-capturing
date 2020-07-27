@@ -1,6 +1,5 @@
 # This file contains GUI automation code
 # run using a python 3 interpreter
-# default header file
 
 import pyautogui
 from time import sleep
@@ -27,6 +26,7 @@ def find(image):
         except:
             print('Searching for : ' + image)
 
+# function Call of Main goes here(project...)
 
 # moving the mouse to the upper left corner will end the program
 pyautogui.FAILSAFE = True
